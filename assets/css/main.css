@@ -1,7 +1,17 @@
 	body {
 		line-height: 1;
 	}
+/* unvistied link */
+a:link {
+	color: white;
+	text-decoration: none;
+}
 
+/* visited link */
+a:visited {
+	color: white;
+	text-decoration: none;
+}
 
 /* Box Model */
 
@@ -30,7 +40,7 @@
 	}
 
 	body {
-		background: #202024;
+		background: #000000;
 	}
 
 
@@ -58,7 +68,7 @@
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #fff;
-		font-weight: 400;
+		font-weight: 500;
 		line-height: 1.5;
 		margin: 0 0 1em 0;
 	}
@@ -117,12 +127,13 @@
 
 			}
 
+
 /* Box */
 
 	.box {
 		border-radius: 4px;
 		margin-bottom: 2em;
-		background: #2c2c32;
+		background: #191919;
 		text-align: center;
 	}
 
@@ -146,9 +157,6 @@
 				}
 
 			}
-
-
-
 
 /* Button */
 
@@ -252,13 +260,13 @@
 /* Banner */
 
 	#banner {
-		background-image: url("background.jpg");
+		background-image: url("https://backgroundcheckall.com/wp-content/uploads/2018/10/christmas-tree-bokeh-background-5.jpg");
 		display: flex;
 		-moz-justify-content: center;
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		padding: 8em 4em 11em 4em;
+		padding: 8em 4em 16em 4em;
 		min-height: 80vh;
 		background-position: center;
 		background-size: cover;
@@ -267,7 +275,29 @@
 		text-align: center;
 	}
 
+		#banner2 {
+			background-image: url("https://media.istockphoto.com/photos/dark-christmas-background-with-small-lights-place-for-text-blank-for-picture-id1071375818?k=6&m=1071375818&s=612x612&w=0&h=WYGLbJ95dsYVQ1nSZFuUYdtenQCOxXy1Ue3p-mwkAX0=");
+			display: flex;
+			-moz-justify-content: center;
+			-webkit-justify-content: center;
+			-ms-justify-content: center;
+			justify-content: center;
+			padding: 8em 4em 16em 4em;
+			min-height: 80vh;
+			background-position: center;
+			background-size: cover;
+			border-top: 0;
+			position: relative;
+			text-align: center;
+		}
+
 		#banner .inner {
+			text-align: center;
+			position: relative;
+			z-index: 2;
+		}
+
+		#banner2 .inner {
 			text-align: center;
 			position: relative;
 			z-index: 2;
@@ -281,12 +311,27 @@
 			margin: 0;
 		}
 
+		#banner2 h1 {
+			color: #fff;
+			font-size: 5em;
+			font-weight: 400;
+			font-family: 'Passion One', cursive;
+			margin: 0;
+		}
 
 		#banner p {
 			color: rgb(255, 255, 255);
 			font-size: 1.5em;
 			font-weight: 300;
 		}
+
+		#banner2 p {
+			color: rgb(255, 255, 255);
+			text-align: center;
+			font-size: 1.5em;
+			font-weight: 300;
+		}
+
 		#banner:before {
 			-moz-transition: opacity 3s ease;
 			-webkit-transition: opacity 3s ease;
@@ -297,7 +342,7 @@
 			-ms-transition-delay: 1s;
 			transition-delay: 1s;
 			content: '';
-			background-color: #42424f;
+			background-color: #191919;
 			display: block;
 			height: 100%;
 			left: 0;
@@ -308,33 +353,25 @@
 			z-index: 1;
 		}
 
-		@media screen and (max-width: 1280px) {
-
-			#banner video {
-				display: none;
-			}
-
-		}
-
-		@media screen and (max-width: 980px) {
-
-			#banner br {
-				display: none;
-			}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			#banner {
-				min-height: 0;
-				padding: 6em 2em 4em 2em;
-			}
-
-				#banner br {
-					display: none;
-				}
-
+		#banner2:before {
+			-moz-transition: opacity 3s ease;
+			-webkit-transition: opacity 3s ease;
+			-ms-transition: opacity 3s ease;
+			transition: opacity 3s ease;
+			-moz-transition-delay: 1s;
+			-webkit-transition-delay: 1s;
+			-ms-transition-delay: 1s;
+			transition-delay: 1s;
+			content: '';
+			background-color: #191919;
+			display: block;
+			height: 100%;
+			left: 0;
+			opacity: 1;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 1;
 		}
 
 /* Main */
@@ -369,7 +406,7 @@
 
 	#footer {
 		padding: 4em 0 2em 0;
-		background-color: #1b1b1f;
+		background-color: #000000;
 		text-align: center;
 	}
 
