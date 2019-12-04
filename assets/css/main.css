@@ -1,7 +1,7 @@
 	body {
 		line-height: 1;
 	}
-/* unvistied link */
+/* unvisited link */
 a:link {
 	color: white;
 	text-decoration: none;
@@ -12,6 +12,7 @@ a:visited {
 	color: white;
 	text-decoration: none;
 }
+
 
 /* Box Model */
 
@@ -66,7 +67,49 @@ a:visited {
 		margin: 0 0 2em 0;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	#outlets a {
+  padding-top: 60px;
+}
+#outlets a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb04 2s infinite;
+  animation: sdb04 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb04 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+}
+@keyframes sdb04 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+}
+
+
+	h1, h2, h3, h4, {
 		color: #fff;
 		font-weight: 500;
 		line-height: 1.5;
@@ -266,7 +309,7 @@ a:visited {
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		padding: 8em 4em 16em 4em;
+		padding: 8em 4em 12em 4em;
 		min-height: 80vh;
 		background-position: center;
 		background-size: cover;
@@ -275,22 +318,6 @@ a:visited {
 		text-align: center;
 	}
 
-		#banner2 {
-			background-image: url("https://media.istockphoto.com/photos/dark-christmas-background-with-small-lights-place-for-text-blank-for-picture-id1071375818?k=6&m=1071375818&s=612x612&w=0&h=WYGLbJ95dsYVQ1nSZFuUYdtenQCOxXy1Ue3p-mwkAX0=");
-			display: flex;
-			-moz-justify-content: center;
-			-webkit-justify-content: center;
-			-ms-justify-content: center;
-			justify-content: center;
-			padding: 8em 4em 16em 4em;
-			min-height: 80vh;
-			background-position: center;
-			background-size: cover;
-			border-top: 0;
-			position: relative;
-			text-align: center;
-		}
-
 		#banner .inner {
 			text-align: center;
 			position: relative;
@@ -298,6 +325,12 @@ a:visited {
 		}
 
 		#banner2 .inner {
+			text-align: center;
+			position: relative;
+			z-index: 2;
+		}
+
+		#banner3 .inner {
 			text-align: center;
 			position: relative;
 			z-index: 2;
@@ -312,6 +345,14 @@ a:visited {
 		}
 
 		#banner2 h1 {
+			color: #fff;
+			font-size: 5em;
+			font-weight: 400;
+			font-family: 'Passion One', cursive;
+			margin: 0;
+		}
+
+		#banner3 h1 {
 			color: #fff;
 			font-size: 5em;
 			font-weight: 400;
@@ -354,6 +395,27 @@ a:visited {
 		}
 
 		#banner2:before {
+			-moz-transition: opacity 3s ease;
+			-webkit-transition: opacity 3s ease;
+			-ms-transition: opacity 3s ease;
+			transition: opacity 3s ease;
+			-moz-transition-delay: 1s;
+			-webkit-transition-delay: 1s;
+			-ms-transition-delay: 1s;
+			transition-delay: 1s;
+			content: '';
+			background-color: #191919;
+			display: block;
+			height: 100%;
+			left: 0;
+			opacity: 1;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
+
+		#banner3:before {
 			-moz-transition: opacity 3s ease;
 			-webkit-transition: opacity 3s ease;
 			-ms-transition: opacity 3s ease;
